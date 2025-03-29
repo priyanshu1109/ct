@@ -142,7 +142,7 @@ export default function TravelForm() {
     console.log(formDataToSend)
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/api/trip_details", {
+      const response = await fetch(process.env.REACT_APP_API_URL+"trip_details", {
         method: "POST",
         body: formDataToSend,
         
