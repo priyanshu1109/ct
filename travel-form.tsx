@@ -142,7 +142,7 @@ export default function TravelForm() {
     console.log(formDataToSend)
 
     try {
-      const response = await fetch("http://13.235.192.197:5000/"+"trip_details", {
+      const response = await fetch("http://13.235.192.197:5000/api/"+"trip_details", {
         method: "POST",
         body: formDataToSend,
         
